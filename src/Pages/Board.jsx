@@ -32,7 +32,7 @@ function Board() {
   const getBoardData = () => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbyGujyOWsqlnFyJGPzIvICGVBLW1yqp99YDkTsb_7a2575PG--75PYZdAD00T0ziwyM/exec?type=points"
+      "https://script.google.com/macros/s/AKfycbwSlPUjT_-yon0mhCw2HsdY2NVEWa0OIR32Cz3_23KSGe2jt4uVRmS_NEHo3IN9mrk0fA/exec?type=points"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -89,7 +89,6 @@ function Board() {
               <tr key={index}>
                 <td className="teamName">
                   {row.YearName}
-                  <span>{`${ordinal_suffix_of(row.Year)} year`}</span>
                 </td>
                 <td className="points">{row.Point}</td>
               </tr>

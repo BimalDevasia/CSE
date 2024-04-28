@@ -11,7 +11,7 @@ function Events() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbyGujyOWsqlnFyJGPzIvICGVBLW1yqp99YDkTsb_7a2575PG--75PYZdAD00T0ziwyM/exec?type=events"
+      "https://script.google.com/macros/s/AKfycbwSlPUjT_-yon0mhCw2HsdY2NVEWa0OIR32Cz3_23KSGe2jt4uVRmS_NEHo3IN9mrk0fA/exec?type=events"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -32,7 +32,6 @@ function Events() {
       event.Winner2.toLowerCase().includes(searchTerm) ||
       event.Winner3.toLowerCase().includes(searchTerm) ||
       event.EventDate.toLowerCase().includes(searchTerm) ||
-      event.EventStage.toLowerCase().includes(searchTerm) ||
       event.EventState.toLowerCase().includes(searchTerm)
   );
 
@@ -43,7 +42,7 @@ function Events() {
         <input
           type="text"
           className="Search"
-          placeholder="Search Event, Winner, Day, Stage"
+          placeholder="Search Event, Winner, Day"
           value={searchTerm}
           onChange={handleSearchChange}
         />
@@ -57,15 +56,10 @@ function Events() {
             <div className="event_card" key={index}>
               <div className="mele">
                 <span className="eventDate"> {row.EventDate}</span>
-                <span className="eventState" data-state={row.EventState}>
-                  {row.EventState}
-                </span>
               </div>
               <hr />
               <span className="eventName">{row.EventName}</span>
-              <span className="eventStage" data-state={row.EventStage}>
-                Stage: {row.EventStage}
-              </span>
+             
               {row.EventState == "Result Announced" ? (
                 <span className="eventStartTime" data-state={row.EventStart}>
                   Event Started At {row.EventStart}
