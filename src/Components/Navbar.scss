@@ -174,7 +174,7 @@
       .nav--logo {
         .logo {
           height: 100px;
-          width: auto;
+          width: 100px;
           object-fit: contain;
           user-select: none;
         }
@@ -212,3 +212,10 @@
   overflow: hidden;
   height: 100vh;
 }
+
+// @media screen and (max-width: 740px) {
+//   .logo{
+//     width:0px;
+//     height:30px;
+//   }
+// }
