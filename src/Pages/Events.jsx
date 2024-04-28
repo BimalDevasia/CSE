@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 
 import Spinner from "../Components/Spinner";
 import "./Events.scss";
+import first from "../assets/first.png"
+import second from "../assets/second.png"
+import third from "../assets/third.png"
+
 
 function Events() {
   const [eventData, setEventData] = useState([]);
@@ -70,13 +74,13 @@ function Events() {
                 </span>
               )}
               <span className="FirstWinner Winner" data-state={row.Winner1}>
-                First : {row.Winner1}
+                <img className="newimg" src={first} alt="" /> : {row.Winner1}
               </span>
               <span className="SecondWinner Winner" data-state={row.Winner2}>
-                Second : {row.Winner2}
+              <img className="newimg" src={second} alt="" /> : {row.Winner2}
               </span>
               <span className="ThirdWinner Winner" data-state={row.Winner3}>
-                Third : {row.Winner3}
+              <img className="newimg" src={third} alt="" /> : {row.Winner3}
               </span>
             </div>
           ))}
