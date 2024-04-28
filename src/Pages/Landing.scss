@@ -1,4 +1,18 @@
 @import "../Variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+
+.heading{
+  font-size: 130px;
+  font-family: trocchi;
+  padding-left:1rem;
+  padding-right: 1rem;
+  background-image: linear-gradient(to top, rgba(224, 204, 31, 0), rgba(224, 204, 31, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
 .Landing {
   position: absolute;
@@ -13,13 +27,14 @@
     align-items: center;
     text-align: center;
     background-color: #000000;
-    // background-image: url("../assets/dakshaBG.jpg");
+    background-image: url("./bg.png");
     background-repeat: no-repeat;
     background-position: 60%;
     background-size: cover;
     overflow-x: hidden;
     p {
       margin-bottom: 16px;
+      font-size: larger;
     }
     .month{
       margin-top: 16px;
@@ -62,6 +77,11 @@
 }
 
 @media screen and (max-width: 740px) {
+
+  .heading{
+    font-size: 80px;
+  }
+
   .Landing {
     .Hero {
       img {
