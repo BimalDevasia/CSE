@@ -33,7 +33,7 @@ function Navbar() {
             </li>
             <li className="nav--link">
               <NavLink onClick={() => toggleChecked(true)} to="/events">
-                Events
+                Competitions
               </NavLink>
             </li>
             <li className="nav--link">

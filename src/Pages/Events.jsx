@@ -42,11 +42,11 @@ function Events() {
   return (
     <>
       <div className="title--box">
-        <h1>Events</h1>
+        <h1>Competitions</h1>
         <input
           type="text"
           className="Search"
-          placeholder="Search Event, Winner, Day"
+          placeholder="Search Competitions, Winner, Day"
           value={searchTerm}
           onChange={handleSearchChange}
         />
@@ -60,17 +60,18 @@ function Events() {
             <div className="event_card" key={index}>
               <div className="mele">
                 <span className="eventDate"> {row.EventDate}</span>
+               { row.EventState!=""? <a href={row.EventState}><div className="reg">Register here</div></a>:""}
               </div>
               <hr />
               <span className="eventName">{row.EventName}</span>
              
               {row.EventState == "Result Announced" ? (
                 <span className="eventStartTime" data-state={row.EventStart}>
-                  Event Started At {row.EventStart}
+                  Time: {row.EventStart}
                 </span>
               ) : (
                 <span className="eventStartTime" data-state={row.EventStart}>
-                  Event Starts At {row.EventStart}
+                  Time: {row.EventStart}
                 </span>
               )}
               <span className="FirstWinner Winner" data-state={row.Winner1}>

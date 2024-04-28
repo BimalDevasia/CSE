@@ -1,9 +1,18 @@
 .newimg{
   width:35px;
 }
+a:visited {
+  color: inherit;
+}
+a:hover, a:active {
+  color: inherit;
+}
 
-
-
+.reg{
+  border: solid 1px;
+  padding:3px 5px 3px 5px;
+  margin-bottom: 3px;
+}
 
 .title--box {
   margin-top: 2rem;
@@ -50,8 +59,8 @@
     width: calc(100vw - 48px);
     min-width: 350px;
     max-width: 400px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.237);
+    height: 320px;
+    background: rgba(255, 255, 255, 0);
     border: 1px solid rgba(255, 255, 255, 0.237);
     border-radius: 1rem;
     backdrop-filter: blur(5px);
@@ -82,7 +91,7 @@
     .eventName{
       font-size: 1.3rem;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 3px;
       margin-top: 8px;
     }
     .eventState{
