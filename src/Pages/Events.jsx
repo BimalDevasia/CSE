@@ -59,11 +59,12 @@ function Events() {
           {filteredEvents.map((row, index) => (
             <div className="event_card" key={index}>
               <div className="mele">
-                <span className="eventDate"> {row.EventDate}</span>
+              <span className="eventName">{row.EventName}</span>
                { row.EventState!=""? <a href={row.EventState}><div className="reg">Register here</div></a>:""}
               </div>
               <hr />
-              <span className="eventName">{row.EventName}</span>
+              
+              <span className="eventDate"> Date :{row.EventDate}</span>
              
               {row.EventState == "Result Announced" ? (
                 <span className="eventStartTime" data-state={row.EventStart}>

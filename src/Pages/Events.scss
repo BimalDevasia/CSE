@@ -85,7 +85,9 @@ a{
       justify-content: space-between;
       margin-bottom: 4px;
     }
-    
+    .eventDate{
+      margin-top: 3px;
+    }
     .eventName{
       font-size: 1.3rem;
       font-weight: bold;
@@ -103,7 +105,7 @@ a{
     }
 
     .Winner{
-      outline: 1px solid;
+      // outline: 1px solid;
       border-radius: .3rem;
       padding: .2rem .4rem;
 
@@ -113,20 +115,15 @@ a{
     }
 
     .FirstWinner{
-      color: rgba(255, 217, 0, 1);
-      background-color: rgba(255, 217, 0, 0.1);
       display: flex;
       align-items: center;
     }
     .SecondWinner{
-      color: rgba(192, 192, 192, 1);
-      background-color: rgba(192, 192, 192, 0.1);
       display: flex;
       align-items: center;
     }
     .ThirdWinner{
-      color: rgba(205, 127, 50, 1);
-      background-color: rgba(205, 127, 50, 0.1);
+
       display: flex;
       align-items: center;
     }
