@@ -73,25 +73,8 @@
       }
     }
     .nav--cta {
-      visibility: hidden;
-      padding: 0.6rem 1.6rem;
-      border: none;
-      border-radius: 3rem;
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: white;
-      text-shadow: 0 0 15px black;
-      background-image: url("../assets/buttonbg.png");
-      background-size: 200%;
-      background-position: 10%;
-      transition: $transition1;
-      outline-offset: 4px;
-      outline: 1.5px solid rgba(255, 255, 255, 0.237);
-
-      &:is(:hover, :focus) {
-        background-position: 60%;
-        outline: 1.5px solid rgb(255, 255, 255);
-      }
+    
+    width:100px;
     }
 
     .menu-icon {
@@ -164,7 +147,9 @@
 
 @media screen and (max-width: 740px) {
   .nav--cta {
-    display: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
   .nav--box {
     .nav--container {

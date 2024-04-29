@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
+import logo from "../assets/cselogo.png"
 import "./Navbar.scss";
 import Logo from "/logo.png";
 
@@ -43,9 +43,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <Link className="nav--cta" to="/register">
-          Register
-        </Link>
+        <img className="nav--cta"src={logo} alt="" />
         <div className="menu-icon">
           <input
             className="menu-icon__cheeckbox"
