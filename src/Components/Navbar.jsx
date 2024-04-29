@@ -21,11 +21,12 @@ function Navbar() {
       <div className="nav--container">
         <Link to="/">
           <div className="nav--logo">
-            <img className="logo" src={Logo} alt="Daksha24 Logo" />
+            <img className="logo" src={Logo} alt="Logo" />
           </div>
         </Link>
         <nav className={`nav--links ${isMenuOpen && "active"}`}>
           <ul>
+        {isMenuOpen===true?<img className="nav-cta"src={logo} alt="" />:""}
             <li className="nav--link">
               <NavLink onClick={() => toggleChecked(true)} to="/">
                 Home

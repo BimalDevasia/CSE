@@ -1,5 +1,10 @@
 @import "../Variables.scss";
 
+.nav-cta{
+  width:100px;
+  position: absolute;
+  top:2rem;
+}
 .nav--box {
   width: 100%;
   position: sticky;
@@ -147,9 +152,7 @@
 
 @media screen and (max-width: 740px) {
   .nav--cta {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+   display: none;
   }
   .nav--box {
     .nav--container {
