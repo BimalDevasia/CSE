@@ -32,7 +32,7 @@ function Board() {
   const getBoardData = () => {
     setIsLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbwSlPUjT_-yon0mhCw2HsdY2NVEWa0OIR32Cz3_23KSGe2jt4uVRmS_NEHo3IN9mrk0fA/exec?type=points"
+      "https://script.google.com/macros/s/AKfycbzkrl5eaeTYJp4ngqMZmLuK8pw0lcjtlOBGQJmNbTCAyqIm5vZ2mzjXUGJPKD3rdcC8yA/exec?type=points"
     )
       .then((response) => response.json())
       .then((data) => {
