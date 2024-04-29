@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 
 import "./Board.scss";
 import Spinner from "../Components/Spinner";
+import first from "../assets/first.png"
+import second from "../assets/second.png"
+import third from "../assets/third.png"
 
 function Board() {
   const columns = ["Team", "Points"];
@@ -88,7 +91,9 @@ function Board() {
             {boardData.map((row, index) => (
               <tr key={index}>
                 <td className="teamName">
-                  {row.YearName}
+                 {index===0? <img className="newimg" src={first} alt="" srcset="" />:"" } 
+                 {index===1? <img className="newimg" src={second} alt="" srcset="" />:"" } 
+                 {index===2? <img className="newimg"src={third} alt="" srcset="" />:"" }  {row.YearName}
                 </td>
                 <td className="points">{row.Point}</td>
               </tr>
